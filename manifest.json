@@ -1,0 +1,27 @@
+{
+    "name": "Welldone Work Helper",
+    "version": "1.0",
+    "description": "Code snippets to help with work routine at Welldone",
+    "background": {
+        "scripts": [
+            "js/config.js",
+            "js/azure/helper/index.js",
+            "js/azure/createBugTask.js",
+            "js/azure/moveFixedBugsToQa.js",
+            "js/azure/rerunFailedPrBuilds.js",
+            "js/general/urlReplacer.js",
+            "js/tmetric/logHours/logHours.js",
+            "js/alarms.js"
+        ]
+    },
+    "permissions": [
+        "alarms",
+        "contextMenus",
+        "storage",
+        "tabs",
+        "https://*.tmetric.com/*",
+        "https://*.visualstudio.com/*",
+        "https://dev.azure.com/*"
+    ],
+    "manifest_version": 2
+}
