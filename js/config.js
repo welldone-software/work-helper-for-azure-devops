@@ -46,15 +46,19 @@ const config = {
         creatorId: '', // Your creator id on Azure DevOps
         organizationUrl: '', // Your organization URL on Azure DevOps
         projectId: '', // Your project id on Azure DevOps
-        repositoryId: '', // The repository id in Azure DevOps
+        repositoryId: '', // The repository id on Azure DevOps
 
         moveFixedBugsToQa: {
-            pipelineId: '',
+            pipelineId: '', // Bugs will be considered as fixed only after a successful run of this pipeline
             periodInMinutes: 5, // How often (in minutes) to check for fixed bugs and move them to QA state
+            startTime: '08:00:00', // 'hh:mm:ss' time string. Periodic scans will start from this time
+            endTime: '22:00:00', // 'hh:mm:ss' time string. Periodic scans will end at this time
         },
         
         rerunFailedPrBuilds: {
             periodInMinutes: 5, // How often (in minutes) to check and re-run failed PR builds
+            startTime: '08:00:00', // 'hh:mm:ss' time string. Periodic scans will start from this time
+            endTime: '22:00:00', // 'hh:mm:ss' time string. Periodic scans will end at this time
         },
     },
 };

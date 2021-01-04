@@ -1,17 +1,20 @@
 {
-    "name": "Welldone Work Helper",
-    "version": "1.0",
-    "description": "Code snippets to help with work routine at Welldone",
+    "name": "Help Kit for Azure DevOps",
+    "version": "2.0",
+    "description": "This Chrome extension offers a variety of features for simpler work with Azure DevOps",
     "background": {
         "scripts": [
+            "js/utils/time.js",
+            "js/utils/chrome.js",
             "js/config.js",
-            "js/azure/helper/index.js",
-            "js/azure/createBugTask.js",
-            "js/azure/moveFixedBugsToQa.js",
-            "js/azure/rerunFailedPrBuilds.js",
-            "js/general/urlReplacer.js",
-            "js/tmetric/logHours/logHours.js",
-            "js/alarms.js"
+            "js/jobs/azure/helper/index.js",
+            "js/jobs/azure/createBugTask.js",
+            "js/jobs/azure/moveReadyBacklogItemsToQa.js",
+            "js/jobs/azure/moveFixedBugsToQa.js",
+            "js/jobs/azure/rerunFailedPrBuilds.js",
+            "js/jobs/general/urlReplacer.js",
+            "js/jobs/tmetric/logHours/logHours.js",
+            "js/jobs/index.js"
         ]
     },
     "permissions": [
